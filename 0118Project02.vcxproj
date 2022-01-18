@@ -140,16 +140,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Goblin.h" />
+    <ClInclude Include="Image.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Transition.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Goblin.cpp" />
+    <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Transition.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
