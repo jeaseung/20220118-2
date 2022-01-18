@@ -1,4 +1,7 @@
 #pragma once
+#include<iostream>
+using namespace std;
+
 class Player
 {
 private:
@@ -7,6 +10,18 @@ private:
 	int Gold;
 
 public:
+	Player()// 기본 생성자(constructor)
+	{
+		cout << "플레이어 생성" << endl;
+	}
+
+	~Player()//소멸자, 파괴자 (destructor)
+	{
+		cout << "플레이어 사라짐" << endl;
+	}
+
+
+
 	//const 함수 젤 앞 반환형
 	//const Player* GetPlayer(); //반환값을 수정하지 마세요
 
@@ -17,6 +32,8 @@ public:
 	//int GetHP() const // 이 함수는 멤버변수를 변경하지 않습니다. 
 
 	//접근자, accessor
+
+
 	void SetHP(int NewHP)
 	{
 		if (NewHP >= 0)
